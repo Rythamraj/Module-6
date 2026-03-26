@@ -24,24 +24,27 @@ To implement **Encapsulation** in Python by defining a class `Rectangle` with **
 
 ## 💻 Program
 ```
-class Fish:
-    def type(self):
-        print("fish")
+class Rectangle:
+    def __init__(self, length, width):
+        # private variables
+        self.__length = length
+        self.__width = width
 
-class Shark(Fish):
-	def type(self):
-	    print("shark")
+    def display(self):
+        # accessing private variables within the class
+        print(self.__length)
+        print(self.__width)
 
-obj_goldfish=Fish()
-obj_hammerhead=Shark()
+# create object
+rect = Rectangle(5, 3)
 
-obj_goldfish.type()
-obj_hammerhead.type()
+# print values within the class
+rect.display()
 
 ```
 
 ## Output
-<img width="705" height="377" alt="image" src="https://github.com/user-attachments/assets/4341f441-60f4-4e7e-a8dc-1c970e80c331" />
+<img width="740" height="186" alt="image" src="https://github.com/user-attachments/assets/203d1331-0c10-43f4-b136-7110b7554ced" />
 
 ## Result
-Thus the program that demonstrates class inheritance by creating a parent class Fish with a method type, and a child class Shark that overrides the type method is executed successfully.
+Thus, the program has been executed successfully.
